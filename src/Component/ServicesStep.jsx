@@ -5,7 +5,7 @@ import approval3pic from './pics/approval_3.png'
 export default function ServicesStep() {
   return (
     <div className='pb-4 bg-[#1e1e27] min-h-screen py-12'>
-      <p className='text-[0.85rem] text-white font-semibold text-center mt-5 '>PROCESS OVERVIEW</p>
+      <p className='text-[0.85rem] text-white font-semibold text-center mt-5 pt-[8rem] lg:pt-[4rem]'>PROCESS OVERVIEW</p>
       <p className='text-[2rem] font-bold mt-[0.1rem] text-center text-3xl lg:text-3xl bg-gradient-to-r from-[#df0139] to-[#ff6b9d] bg-clip-text text-transparent mb-6 uppercase'>Unforgettable Getaways Escaping Routine</p>
     
     <div className='mt-10 lg:flex md:flex-row gap-12 justify-center px-4'>

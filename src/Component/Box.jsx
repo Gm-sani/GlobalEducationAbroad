@@ -182,7 +182,7 @@ export function Box2(props) {
   const contentSections = [
     {
       title: `Why Do You Wish to Study ${props.title} Abroad?`,
-      content: `Many aspiring students have a dream to get their ${props.title} degree overseas. Each year, thousands of students choose to study degrees that are recognised around the world, advanced training, and exposure to other countries. EDURITE Consulting is here to help you along the way and make sure you receive the most education possible.`
+      content: `Many aspiring students have a dream to get their ${props.title} degree overseas. Each year, thousands of students choose to study degrees that are recognised around the world, advanced training, and exposure to other countries. Global Education Abroad is here to help you along the way and make sure you receive the most education possible.`
     },
     {
       title: `Advantages of Studying ${props.title} Abroad`,

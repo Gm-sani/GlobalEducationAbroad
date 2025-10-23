@@ -224,7 +224,7 @@ export default function Services() {
       </div>
        {/* -------------------------------External start---------------------------- */}
           
-          <div className='flex justify-center mt-16 mx-4 gap-4'>
+          <div className='hidden lg:flex justify-center mt-16 mx-4 gap-4'>
                  {/* ------------------------------------1_1 service box--------------------------- */}
                   <div className="relative z-10  bg-red-950 p-3 px-4 rounded-lg hover:bg-red-800 cursor-pointer hover:scale-105 transition-all duration-300">
                     {/* ------------------------------------Upper part-------------------------- */}

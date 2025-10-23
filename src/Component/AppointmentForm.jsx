@@ -66,7 +66,7 @@ export default function AppontmentForm(props) {
             {/* --------------------------------form-------------------------------- */}
             <div className='w-full max-w-4xl mx-auto text-center'>
                 {/* Header */}
-                <div className='text-center mb-8'>
+                <div className='text-center mb-8 pt-[8rem] lg:pt-[4rem]'>
                     <p className='text-[0.85rem] text-white font-semibold'>{props.namm}</p>
                     <p className='text-[2rem] font-bold mt-[0.7rem] text-center text-3xl lg:text-3xl bg-gradient-to-r from-[#df0139] to-[#ff6b9d] bg-clip-text text-transparent mb-6 uppercase'>Let Your Study Abroad Aspirations</p>
                     <p className='text-[2rem] font-bold mt-[-1.5rem] text-center text-3xl lg:text-3xl bg-gradient-to-r from-[#df0139] to-[#ff6b9d] bg-clip-text text-transparent mb-6 uppercase'>Guide You</p>

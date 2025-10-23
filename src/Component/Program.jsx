@@ -17,8 +17,10 @@ export default function Program(props) {
   return (
     <>
     <IntroPage2 namm="Programs"/>
-    <div className='bg-[#1e1e27] pb-[10.5rem] min-h-screen'>
-      <p className='text-[0.85rem] text-white font-semibold text-center pt-5 tracking-widest uppercase'>COURSES WE OFFER</p>
+    <div className='bg-[#1e1e27] pb-[10.5rem] min-h-screen '>
+     <p className='text-[0.85rem] text-white font-semibold text-center tracking-widest uppercase pt-[8rem] lg:pt-[4rem]'>
+    COURSES WE OFFER
+</p>
       <p className='text-[2rem] font-bold mt-[0.1rem] text-center text-3xl lg:text-3xl bg-gradient-to-r from-[#df0139] to-[#ff6b9d] bg-clip-text text-transparent mb-6 uppercase'>Get the Best Courses You Deserve</p>
       
       {/* -----------------------------------------Box row 1---------------------------- */}
