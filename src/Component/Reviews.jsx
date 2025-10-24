@@ -32,7 +32,7 @@ export default function Reviews() {
   const reviews = [
     {
       id: 1,
-      text: "Exceptional service! EduRite Consulting guided me through the entire process, making it seamless and stress-free. Highly recommend for study visas!",
+      text: "Exceptional service! Global Education Abroad guided me through the entire process, making it seamless and stress-free. Highly recommend for study visas!",
       image: reviewpic1,
       name: "Syed Mustaneer",
       country: "UAE",
@@ -41,7 +41,7 @@ export default function Reviews() {
     },
     {
       id: 2,
-      text: "Outstanding support! EduRite Consulting made my study visa process effortless with their expertise and professionalism. Highly recommend their services!",
+      text: "Outstanding support! Global Education Abroad made my study visa process effortless with their expertise and professionalism. Highly recommend their services!",
       image: reviewpic2,
       name: "Syed Muhammad",
       country: "China",
@@ -50,7 +50,7 @@ export default function Reviews() {
     },
     {
       id: 3,
-      text: "Excellent service! EduRite Consulting simplified my study visa application, providing expert guidance and support. Highly recommend their consultancy!",
+      text: "Excellent service! Global Education Abroad simplified my study visa application, providing expert guidance and support. Highly recommend their consultancy!",
       image: reviewpic3,
       name: "Akasha Hameed",
       country: "Saudia",
@@ -59,7 +59,7 @@ export default function Reviews() {
     },
     {
       id: 4,
-      text: "Superb service! EduRite Consulting provided clear guidance and support throughout my study visa application. Highly recommend their expertise and professionalism.",
+      text: "Superb service! Global Education Abroad provided clear guidance and support throughout my study visa application. Highly recommend their expertise and professionalism.",
       image: reviewpic4,
       name: "Mustafa",
       country: "Canada",
@@ -68,7 +68,7 @@ export default function Reviews() {
     },
     {
       id: 5,
-      text: "EduRite offers exceptional guidance and support, making educational dreams a reality with their expertise and personalized approach. Highly recommended!",
+      text: "Global Education Abroad offers exceptional guidance and support, making educational dreams a reality with their expertise and personalized approach. Highly recommended!",
       image: reviewpic5,
       name: "Arshad",
       country: "Italy",
@@ -77,7 +77,7 @@ export default function Reviews() {
     },
     {
       id: 6,
-      text: "EduRite transforms educational aspirations into reality with expert guidance and tailored support, making every student's journey exceptional. Truly outstanding!",
+      text: "Global Education Abroad transforms educational aspirations into reality with expert guidance and tailored support, making every student's journey exceptional. Truly outstanding!",
       image: reviewpic6,
       name: "Abdullah Shah",
       country: "France",
@@ -86,7 +86,7 @@ export default function Reviews() {
     },
     {
       id: 7,
-      text: "EduRite excels in offering thoughtful, personalized guidance for students, ensuring a smooth and successful path to academic achievement.",
+      text: "Global Education Abroad excels in offering thoughtful, personalized guidance for students, ensuring a smooth and successful path to academic achievement.",
       image: reviewpic7,
       name: "Muneeb",
       country: "Sweden",

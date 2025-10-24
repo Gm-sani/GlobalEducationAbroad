@@ -117,26 +117,30 @@ export default function WhyChooseus() {
           <div className={`transform transition-all duration-1000 delay-300 ${
             isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
           }`}>
-            {/* Header */}
-            <div className="mb-12">
+            {/* Header - Centered on mobile, left aligned on larger screens */}
+            <div className="mb-12 text-center lg:text-left">
               <div className={`inline-flex items-center justify-center mb-4 transform transition-all duration-1000 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-red-500 to-transparent mr-4 animate-pulse"></div>
-          <p className="text-black font-semibold tracking-widest text-sm uppercase animate-bounce-in">
-            Why Choose Us
-          </p>
-          <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-red-500 to-transparent ml-4 animate-pulse"></div>
-        </div>
-              <h2 className="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-red-800 mb-4 uppercase">
+                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              }`}>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-red-500 to-transparent mr-4 animate-pulse"></div>
+                <p className="text-black font-semibold tracking-widest text-sm uppercase">
+                  Why Choose Us
+                </p>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-red-500 to-transparent ml-4 animate-pulse"></div>
+              </div>
+              
+              {/* Heading - Centered on mobile */}
+              <h2 className="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-red-800 mb-4 uppercase text-center lg:text-left">
                 We Provide Experts To Create Great Value For Your Visa
               </h2>
-              <p className="text-black text-lg">
+              
+              {/* Paragraph - Centered on mobile */}
+              <p className="text-black text-lg text-center lg:text-left">
                 Experience excellence in visa processing with our dedicated team of professionals
               </p>
             </div>
 
-            {/* Features List */}
+            {/* Features List - Keep original alignment */}
             <div className="space-y-6">
               {features.map((feature, index) => (
                 <div
@@ -191,9 +195,6 @@ export default function WhyChooseus() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Shine Effect */}
-                  {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300/40 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div> */}
                 </div>
               ))}
             </div>
