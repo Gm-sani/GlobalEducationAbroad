@@ -68,7 +68,7 @@ export default function Achievements() {
       ))}
 
       {/* Section Title */}
-      <div className="relative z-10 text-center mb-8 lg:mb-12 px-4">
+      <div className="relative z-10 text-center mb-8 lg:mb-16 px-4">
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-3 lg:mb-4">
           OUR ACHIEVEMENTS
         </h2>
@@ -112,20 +112,21 @@ export default function Achievements() {
         ))}
       </div>
 
-      {/* Desktop Marquee */}
+      {/* Desktop Marquee - Enhanced for big screens */}
       <div className="hidden lg:block">
         <Marquee 
           pauseOnHover 
-          speed={50}
+          speed={60}
           gradient={true}
           gradientColor={[15, 23, 42]}
-          gradientWidth={100}
+          gradientWidth={150}
+          className="marquee-container"
         >
           <div className='flex py-8'>
             {achievements.map((achievement) => (
               <div
                 key={achievement.id}
-                className={`group relative mx-4 min-w-[300px] rounded-2xl backdrop-blur-xl border border-white/10 
+                className={`group relative mx-6 min-w-[320px] xl:min-w-[360px] 2xl:min-w-[400px] rounded-2xl backdrop-blur-xl border border-white/10 
                   bg-gradient-to-br from-white/5 to-white/10 overflow-hidden 
                   hover:transform hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-out
                   ${achievement.gradient} hover:${achievement.hoverGradient}`}
@@ -136,15 +137,15 @@ export default function Achievements() {
                 </div>
 
                 {/* Main Content */}
-                <div className="relative z-10 flex items-center gap-6 p-6">
+                <div className="relative z-10 flex items-center gap-6 p-6 xl:p-8">
                   {/* Icon Container with Gradient Border */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-xl blur-sm group-hover:blur-md transition-all duration-300"></div>
-                    <div className="relative bg-white/5 rounded-xl p-3 border border-white/10 backdrop-blur-sm">
+                    <div className="relative bg-white/5 rounded-xl p-3 xl:p-4 border border-white/10 backdrop-blur-sm">
                       <img 
                         src={achievement.icon} 
                         alt={achievement.title}
-                        className="h-16 w-16 object-contain filter brightness-0 invert"
+                        className="h-16 w-16 xl:h-20 xl:w-20 object-contain filter brightness-0 invert"
                       />
                     </div>
                     
@@ -154,19 +155,76 @@ export default function Achievements() {
 
                   {/* Text Content */}
                   <div className="flex-1">
-                    <p className={`text-4xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent mb-1 
+                    <p className={`text-4xl xl:text-5xl 2xl:text-6xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent mb-1 
                       group-hover:scale-110 transition-transform duration-300`}>
                       {achievement.number}
                     </p>
-                    <p className="text-gray-300 text-sm font-medium uppercase tracking-wider">
+                    <p className="text-gray-300 text-sm xl:text-base font-medium uppercase tracking-wider">
                       {achievement.title}
                     </p>
                   </div>
 
                   {/* Hover Effect Arrow */}
                   <div className="opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300">
-                    <div className="w-8 h-8 bg-gradient-to-r from-white/10 to-white/5 rounded-full flex items-center justify-center">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-gradient-to-r from-white/10 to-white/5 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 xl:w-5 xl:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Shine Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+              </div>
+            ))}
+            
+            {/* Duplicate items for seamless looping on large screens */}
+            {achievements.map((achievement) => (
+              <div
+                key={achievement.id + "-duplicate"}
+                className={`group relative mx-6 min-w-[320px] xl:min-w-[360px] 2xl:min-w-[400px] rounded-2xl backdrop-blur-xl border border-white/10 
+                  bg-gradient-to-br from-white/5 to-white/10 overflow-hidden 
+                  hover:transform hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-out
+                  ${achievement.gradient} hover:${achievement.hoverGradient}`}
+              >
+                {/* Animated Border Glow */}
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${achievement.gradient} opacity-0 group-hover:opacity-100 transition-all duration-500 p-[1px]`}>
+                  <div className="w-full h-full bg-gray-900 rounded-2xl"></div>
+                </div>
+
+                {/* Main Content */}
+                <div className="relative z-10 flex items-center gap-6 p-6 xl:p-8">
+                  {/* Icon Container with Gradient Border */}
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-xl blur-sm group-hover:blur-md transition-all duration-300"></div>
+                    <div className="relative bg-white/5 rounded-xl p-3 xl:p-4 border border-white/10 backdrop-blur-sm">
+                      <img 
+                        src={achievement.icon} 
+                        alt={achievement.title}
+                        className="h-16 w-16 xl:h-20 xl:w-20 object-contain filter brightness-0 invert"
+                      />
+                    </div>
+                    
+                    {/* Floating Dots */}
+                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping"></div>
+                  </div>
+
+                  {/* Text Content */}
+                  <div className="flex-1">
+                    <p className={`text-4xl xl:text-5xl 2xl:text-6xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent mb-1 
+                      group-hover:scale-110 transition-transform duration-300`}>
+                      {achievement.number}
+                    </p>
+                    <p className="text-gray-300 text-sm xl:text-base font-medium uppercase tracking-wider">
+                      {achievement.title}
+                    </p>
+                  </div>
+
+                  {/* Hover Effect Arrow */}
+                  <div className="opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 bg-gradient-to-r from-white/10 to-white/5 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 xl:w-5 xl:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>
@@ -195,8 +253,8 @@ export default function Achievements() {
           mask-image: linear-gradient(
             to right,
             transparent,
-            black 10%,
-            black 90%,
+            black 5%,
+            black 95%,
             transparent
           );
         }

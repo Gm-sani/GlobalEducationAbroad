@@ -3,7 +3,7 @@ import { IconButton } from '@mui/material';
 import DialpadIcon from '@mui/icons-material/Dialpad';
 import TimerIcon from '@mui/icons-material/Timer';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
-import logo from "./pics/logo-final.png"
+import logo from "./pics/logo-final (1).png"
 import TimerTwoToneIcon from '@mui/icons-material/TimerTwoTone';
 import { useNavigate } from 'react-router-dom';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';

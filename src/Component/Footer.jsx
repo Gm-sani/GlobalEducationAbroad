@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import footer from "./pics/footer_4.jpg"
-import logo from "./pics/logo-final.png"
+import logo from "./pics/logo-final (1).png"
 // import logo from "./pics/logo_3_rb.png" 
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
