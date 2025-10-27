@@ -54,7 +54,7 @@ export default function Slider() {
                                     text-slate-500 
                                     lg:mt-[1rem] mt-4
                                     leading-relaxed">
-                            At HM Consultant, we simplify studying abroad guiding you from admissions to visas with trusted expertise in Pakistan.
+                            At Global Education Abroad , we simplify studying abroad guiding you from admissions to visas with trusted expertise in Pakistan.
                         </p>
                         
                         {/* Primary Button */}
@@ -79,7 +79,7 @@ export default function Slider() {
                         <h3 className="lg:text-[1.3rem] md:text-[1.2rem] text-[1.1rem] 
                                      font-sans 
                                      text-black font-semibold 
-                                     lg:mt-[1rem] mt-6
+                                    mt-[-2.5rem]
                                      leading-tight">
                             Expert Support for Abroad Studies
                         </h3>
@@ -87,7 +87,7 @@ export default function Slider() {
                                     font-sans 
                                     text-slate-500 
                                     lg:w-[24rem] w-full
-                                    mt-3
+                                    mt-8
                                     leading-relaxed">
                             Studying abroad isn't just paperwork it's your future. We guide you to the right course, right costs, and top universities worldwide.
                         </p>
