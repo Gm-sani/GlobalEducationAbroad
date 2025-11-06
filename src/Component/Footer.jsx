@@ -38,7 +38,7 @@ export default function Footer() {
 
     const countries = [
         "ITALY", "FINLAND", "SWEDEN", "CHINA", 
-        "AUSTRALIA", "UK", "USA" , "Kyrgyzstan" , "Georgia", "Cyprus"
+        "AUSTRALIA", "UK", "USA" , "KYRGYZSTAN" , "GEORGIA", "CYPRUS" 
     ];
 
     const socialLinks = [
@@ -185,7 +185,7 @@ export default function Footer() {
                             </div>
                             <div>
                                 <h4 className="text-white font-semibold mb-2">Head Office</h4>
-                                <p className="text-gray-300 text-sm">23, 1st Floor, Gull plaza,<br/>Barkat market, Lahore</p>
+                                <p className="text-gray-300 text-sm">Office : 7, 4th Floor Shan Arcade<br/>Barkat market, Lahore</p>
                             </div>
                         </div>
 
