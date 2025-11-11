@@ -56,7 +56,7 @@ export default function Certification() {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-[#df0139] to-[#ff6b9d] rounded-full mx-auto mb-4"></div>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Recognized excellence and dedication in educational consulting services since 2009
+              Recognized excellence and dedication in educational consulting services since 2013
             </p>
           </div>
         </Fade>

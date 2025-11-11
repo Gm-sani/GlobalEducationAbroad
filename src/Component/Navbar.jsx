@@ -78,7 +78,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full fixed top-0 left-0 z-50">
       {/* Top Navigation Bar - Uncomment if needed */}
       {/* <div className='lg:flex justify-between lg:px-7 px-4 bg-black text-white p-3 hidden'>
         <div className='flex items-center gap-4 flex-wrap'>
@@ -104,7 +104,7 @@ export default function Navbar() {
       </div> */}
 
       {/* Main Navigation Bar */}
-      <div className='lg:px-8 px-4 py-2 bg-white shadow-lg shadow-red-100 border-b border-red-50'>
+      <div className='lg:px-8 px-4 py-2 bg-white border-b border-red-50'>
         <div className='flex justify-between items-center'>
           {/* Logo */}
           <div className='flex justify-start'>
@@ -140,7 +140,7 @@ export default function Navbar() {
               onClick={() => navigate("apply")} 
               className='flex items-center gap-2 cursor-pointer opacity-0 text-red-600 hover:text-red-700 font-semibold py-2 px-4 rounded-lg hover:bg-red-50 transition-all duration-200'
             >
-              <span>Appointment</span>
+              <span>Conatct Us</span>
               <ArrowRightAltIcon className="text-red-500" />
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function Navbar() {
                 onClick={() => handleNavigation("apply")} 
                 className='flex items-center justify-between cursor-pointer text-red-600 hover:text-red-700 font-semibold py-3 px-4 rounded-lg hover:bg-red-50 transition-all duration-200 border border-red-200'
               >
-                <span>Appointment</span>
+                <span>Contact Us</span>
                 <ArrowRightAltIcon className="text-red-500" />
               </div>
               

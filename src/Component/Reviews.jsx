@@ -225,7 +225,7 @@ export default function Reviews() {
               <div className="text-sm text-gray-600 mt-1">Students Helped</div>
             </div>
             <div className="text-center p-6 bg-[#e2e2e2] rounded-2xl backdrop-blur-sm border border-gray-300">
-              <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">15+</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">40+</div>
               <div className="text-sm text-gray-600 mt-1">Countries</div>
             </div>
             <div className="text-center p-6 bg-[#e2e2e2] rounded-2xl backdrop-blur-sm border border-gray-300">
@@ -233,7 +233,7 @@ export default function Reviews() {
               <div className="text-sm text-gray-600 mt-1">Success Rate</div>
             </div>
             <div className="text-center p-6 bg-[#e2e2e2] rounded-2xl backdrop-blur-sm border border-gray-300">
-              <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">15+</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">12+</div>
               <div className="text-sm text-gray-600 mt-1">Years Experience</div>
             </div>
           </div>
